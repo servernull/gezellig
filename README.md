@@ -7,7 +7,7 @@ Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
 
 ### Setup
 ```bash
-# have downloaded openfaas-exif, openfaas-exiffeed, openfaas-imagecrawl
+# have downloaded openfaas-exif, openfaas-exiffeed, openfaas-imagecrawl, inception
 ```
 
 ### Run
