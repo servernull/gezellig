@@ -1,0 +1,103 @@
+[
+  {
+    "url": "http://scottleedavis.com/assets/img/achilles.jpg",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/scottleedavis/google-earth-toolbox/raw/master/screenshot.png",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "http://scottleedavis.com/assets/img/circadia.png",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "http://scottleedavis.com/assets/img/tortoise.jpg",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "http://scottleedavis.com/assets/img/twitter.png",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "http://scottleedavis.com/assets/img/linkedin.png",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "http://scottleedavis.com/assets/img/light_art.png",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "http://scottleedavis.com/assets/img/scott.jpeg",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "http://scottleedavis.com/assets/img/github.png",
+    "exif": [
+      {
+        "Error": "no EXIF found in image"
+      }
+    ]
+  },
+  {
+    "url": "http://scottleedavis.com/assets/img/ijmuiden-gps-data-1.jpg",
+    "exif": [
+      {
+        "Orientation": "1"
+      },
+      {
+        "XResolution": "72/1"
+      },
+      {
+        "YResolution": "72/1"
+      },
+      {
+        "ResolutionUnit": "2"
+      },
+      {
+        "ExifTag": "90"
+      },
+      {
+        "ColorSpace": "1"
+      },
+      {
+        "PixelXDimension": "621"
+      },
+      {
+        "PixelYDimension": "334"
+      }
+    ]
+  }
+]
