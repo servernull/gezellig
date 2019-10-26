@@ -1,5 +1,5 @@
 # gezellig
-A pipeline for image analysis leveraging OpenFaaS
+A pipeline for image analysis leveraging [OpenFaaS](https://openfaas.com)
 
 _Currently pre alpha_
 
