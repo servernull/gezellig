@@ -3,6 +3,8 @@ An experiment and purely FaaS pipeline for image analysis that leverages [OpenFa
 
 Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
 
+![](gezellig.png)
+
 ### Setup
 ```bash
 # have downloaded openfaas-exif, openfaas-exiffeed, openfaas-imagecrawl, openfaas-opennsfw, inception
