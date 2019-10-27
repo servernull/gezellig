@@ -1,7 +1,7 @@
 # gezellig
 A pipeline for image analysis leveraging [OpenFaaS](https://openfaas.com)
 
-_Currently pre alpha_
+_Currently pre alpha_ and mostly an experiment
 
 Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
 
@@ -16,5 +16,5 @@ Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
 ```
 
 ### Dependencies
-* [OpenFaaS](http://openfaas.com) & (faas-cli)(https://github.com/openfaas/faas-cli)
+* [OpenFaaS](http://openfaas.com) & [faas-cli](https://github.com/openfaas/faas-cli)
 * [Kubernetes](https://kubernetes.io)
