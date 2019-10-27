@@ -1,7 +1,5 @@
 # gezellig
-A pipeline for image analysis leveraging [OpenFaaS](https://openfaas.com)
-
-_Currently pre alpha_ and mostly an experiment
+An experiment and purely FaaS pipeline for image analysis that leverages [OpenFaaS](https://openfaas.com)
 
 Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
 
