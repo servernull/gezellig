@@ -13,3 +13,12 @@ do
 	line="${line#\"}"
 	echo $line | faas-cli invoke inception | jq 
 done < $input
+
+
+input="./image_urls.txt"
+while IFS= read -r line
+do
+	line="${line%\"}"
+	line="${line#\"}"
+	echo $line | faas-cli invoke openfaas-opennsfw | jq 
+done < $input
