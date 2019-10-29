@@ -11,7 +11,7 @@ Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
 * [openfaas-exiffeed](https://github.com/servernull/openfaas-exiffeed)
 * [openfaas-opennsfw](https://github.com/servernull/openfaas-opennsfw)
 * [openfaas-opennsfwfeed](https://github.com/servernull/openfaas-opennsfwfeed)
-
+* [openfaas-elastic](https://github.com/servernull/openfaas-elastic)
 
 ### Run
 ```bash
