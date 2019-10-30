@@ -13,11 +13,6 @@ Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
 * [openfaas-opennsfwfeed](https://github.com/servernull/openfaas-opennsfwfeed)
 * [openfaas-elastic](https://github.com/servernull/openfaas-elastic)
 
-### Run
-```bash
-./run.sh
-```
-
 ### Dependencies
 * [OpenFaaS](http://openfaas.com)
 * [faas-cli](https://github.com/openfaas/faas-cli)
