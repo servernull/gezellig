@@ -13,9 +13,10 @@ Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
 * [openfaas-opennsfwfeed](https://github.com/servernull/openfaas-opennsfwfeed)
 * [openfaas-elastic](https://github.com/servernull/openfaas-elastic)
 * [openfaas-imagesearch](https://github.com/servernull/openfaas-imagesearch)
+* [openfaas-imageui](https://github.com/servernull/openfaas-imageui)
 
 
 ### Dependencies
 * [OpenFaaS](http://openfaas.com)
 * [faas-cli](https://github.com/openfaas/faas-cli)
-* [Kubernetes](https://kubernetes.io)
+* [Elasticsearch](https://www.elastic.co/)
