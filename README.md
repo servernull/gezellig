@@ -33,6 +33,8 @@ k3sup app install openfaas --load-balancer
 * [openfaas-exiffeed](https://github.com/servernull/openfaas-exiffeed)
 * [openfaas-opennsfw](https://github.com/servernull/openfaas-opennsfw)
 * [openfaas-opennsfwfeed](https://github.com/servernull/openfaas-opennsfwfeed)
+* [inception-function](https://github.com/faas-and-furious/inception-function)
+* [openfaas-inceptionfeed](https://github.com/servernull/openfaas-inceptionfeed)
 * [openfaas-elastic](https://github.com/servernull/openfaas-elastic)
 * [openfaas-imagesearch](https://github.com/servernull/openfaas-imagesearch)
 * [openfaas-imagesearchdemux](https://github.com/servernull/openfaas-imagesearchdemux)
