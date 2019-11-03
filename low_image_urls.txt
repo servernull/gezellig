@@ -1,0 +1,9 @@
+[
+  "https://lotussoulstudios.com/wp-content/uploads/2018/07/IMG_9451.jpg",
+  "https://lotussoulstudios.com/wp-content/uploads/2018/10/The-Formula-96x72.jpg",
+  "https://lotussoulstudios.com/wp-content/uploads/2018/10/Birth-Bones-and-Patterns1-290x290.jpg",
+  "https://lotussoulstudios.com/wp-content/uploads/2018/10/The-Safekeeping-of-Gaias-Children-96x72.jpg",
+  "https://lotussoulstudios.com/wp-content/uploads/2014/08/Electricity-Arch-Ah-Chi-Na-290x290.jpg",
+  "https://lotussoulstudios.com/wp-content/uploads/2013/10/SBP-13-Page-16-96x72.jpg",
+  "https://lotussoulstudios.com/wp-content/uploads/2014/06/20140608_092848-290x290.jpg"
+]
