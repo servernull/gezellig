@@ -22,8 +22,9 @@ curl -SLfs https://get.k3sup.dev | sudo sh
 # install openfaas
 k3sup app install openfaas --load-balancer
 
-#install functions
+# install functions, follow follup instructions
 faas-cli template pull
+faas template pull https://github.com/openfaas-incubator/golang-http-template
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagecrawler/master/stack.yml
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-exif/master/stack.yml
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-exiffeed/master/stack.yml
@@ -35,8 +36,8 @@ faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-elastic
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagesearch/master/stack.yml
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagesearchdemux/master/stack.yml
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imageui/master/stack.yml
-
 ```
+
 ### Function dependencies
 * [openfaas-imagecrawl](https://github.com/servernull/openfaas-imagecrawler)
 * [openfaas-exif](https://github.com/servernull/openfaas-exif)
