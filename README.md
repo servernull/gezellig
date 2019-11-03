@@ -1,5 +1,5 @@
 # gezellig
-An experiment and purely FaaS pipeline for image analysis that leverages [OpenFaaS](https://openfaas.com)
+A FaaS application demonstrating image analysis that leverages [OpenFaaS](https://openfaas.com)
 
 ![](gezellig.png)
 
