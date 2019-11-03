@@ -36,6 +36,8 @@ faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-elastic
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagesearch/master/stack.yml
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagesearchdemux/master/stack.yml
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imageui/master/stack.yml
+
+# navigate to http://localhost:8080/function/openfaas-imageui
 ```
 
 ### Function dependencies
