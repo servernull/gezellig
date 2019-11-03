@@ -19,7 +19,7 @@ minikube start --vm-driver=hyperkit \
 # instal k3sup
 curl -SLfs https://get.k3sup.dev | sudo sh
 
-# install openfaas, follow follup instructions
+# install openfaas, follow instructions once complete
 k3sup app install openfaas --load-balancer
 
 # install functions
