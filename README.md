@@ -1,8 +1,6 @@
 # gezellig
 An experiment and purely FaaS pipeline for image analysis that leverages [OpenFaaS](https://openfaas.com)
 
-Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
-
 ![](gezellig.png)
 
 ### Screenshots
@@ -25,7 +23,19 @@ curl -SLfs https://get.k3sup.dev | sudo sh
 k3sup app install openfaas --load-balancer
 
 #install functions
-# todo
+faas-cli template pull
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagecrawler/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-exif/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-exiffeed/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-opennsfw/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-opennsfwfeed/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/faas-and-furious/inception-function/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-inceptionfeed/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-elastic/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagesearch/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagesearchdemux/master/stack.yml
+faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imageui/master/stack.yml
+
 ```
 ### Function dependencies
 * [openfaas-imagecrawl](https://github.com/servernull/openfaas-imagecrawler)
@@ -45,3 +55,4 @@ k3sup app install openfaas --load-balancer
 * [faas-cli](https://github.com/openfaas/faas-cli)
 * [Elasticsearch](https://www.elastic.co/)
 
+Inspired by [cozyish](https://github.com/scottleedavis/cozyish)
