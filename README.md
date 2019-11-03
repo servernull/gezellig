@@ -19,10 +19,10 @@ minikube start --vm-driver=hyperkit \
 # instal k3sup
 curl -SLfs https://get.k3sup.dev | sudo sh
 
-# install openfaas
+# install openfaas, follow follup instructions
 k3sup app install openfaas --load-balancer
 
-# install functions, follow follup instructions
+# install functions
 faas-cli template pull
 faas template pull https://github.com/openfaas-incubator/golang-http-template
 faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagecrawler/master/stack.yml
