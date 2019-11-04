@@ -33,6 +33,18 @@ kubectl port-forward -n openfaas svc/gateway 8080:8080 &
 PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode; echo)
 echo -n $PASSWORD | faas-cli login --username admin --password-stdin
 
+# run grafana in openfaas namespace
+kubectl -n openfaas run \
+--image=stefanprodan/faas-grafana:4.6.3 \
+--port=3000 \
+grafana
+kubectl -n openfaas expose deployment grafana \
+--type=NodePort \
+--name=grafana
+GRAFANA_PORT=$(kubectl -n openfaas get svc grafana -o jsonpath="{.spec.ports[0].nodePort}")
+GRAFANA_URL=http://localhost:$GRAFANA_PORT/dashboard/db/openfaas
+port-forward deployment/grafana 3000:3000 -n openfaas &
+
 # install functions
 faas-cli template pull
 faas template pull https://github.com/openfaas-incubator/golang-http-template
