@@ -45,7 +45,7 @@ GRAFANA_PORT=$(kubectl -n openfaas get svc grafana -o jsonpath="{.spec.ports[0].
 GRAFANA_URL=http://localhost:$GRAFANA_PORT/dashboard/db/openfaas
 port-forward deployment/grafana 3000:3000 -n openfaas &
 
-# OPTIONAL instal metrics-server
+# OPTIONAL install metrics-server
 k3sup app install metrics-server
 
 # start elasticsearch
