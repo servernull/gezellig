@@ -16,7 +16,7 @@ minikube start --vm-driver=hyperkit \
   --memory 4048mb \
   --kubernetes-version='v1.15.0'
 
-# instal k3sup
+# install k3sup
 curl -SLfs https://get.k3sup.dev | sudo sh
 
 # install openfaas
