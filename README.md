@@ -9,8 +9,11 @@ A FaaS application demonstrating image analysis that leverages [OpenFaaS](https:
 ![](analytics.png)
 ![](links.png)
 
-### Installation
-```
+### Setup
+<details>
+  <summary>Click to expand</summary>
+  
+```bash
 # create a cluster.  (minikube in this example)
 minikube start --vm-driver=hyperkit \
   --memory 4048mb \
@@ -48,9 +51,6 @@ port-forward deployment/grafana 3000:3000 -n openfaas &
 # OPTIONAL install metrics-server
 k3sup app install metrics-server
 
-# start elasticsearch
-docker-compose up -d
-
 # update default timeouts to 5 minutes
 kubectl get deploy/gateway -n openfaas -o yaml > gateway.yaml
 #.. edit gateway.yaml
@@ -81,21 +81,19 @@ kubectl get deploy/gateway -n openfaas -o yaml > gateway.yaml
 # apply changes
 kubectl apply -f gateway.yaml
 
+```
+</details>
+
+### Installation
+```
+
+# start elasticsearch
+docker-compose up -d
+
 # install functions
 faas-cli template pull
 faas template pull https://github.com/openfaas-incubator/golang-http-template
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagecrawler/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagecrawlerdemux/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-exif/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-exiffeed/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-opennsfw/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-opennsfwfeed/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/faas-and-furious/inception-function/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-inceptionfeed/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-elastic/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagesearch/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imagesearchdemux/master/stack.yml
-faas-cli deploy -f https://raw.githubusercontent.com/servernull/openfaas-imageui/master/stack.yml
+faas-cli deploy -f stack.yml
 
 # navigate to http://localhost:8080/function/openfaas-imageui
 ```
