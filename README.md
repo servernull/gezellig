@@ -81,18 +81,17 @@ kubectl get deploy/gateway -n openfaas -o yaml > gateway.yaml
 # apply changes
 kubectl apply -f gateway.yaml
 
+# start elasticsearch
+docker-compose up -d
+
+# install function templates
+faas-cli template pull
+faas template pull https://github.com/openfaas-incubator/golang-http-template
 ```
 </details>
 
 ### Installation
 ```
-
-# start elasticsearch
-docker-compose up -d
-
-# install functions
-faas-cli template pull
-faas template pull https://github.com/openfaas-incubator/golang-http-template
 faas-cli deploy -f stack.yml
 
 # navigate to http://localhost:8080/function/openfaas-imageui
