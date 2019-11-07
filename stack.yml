@@ -1,0 +1,92 @@
+version: 1.0
+provider:
+  name: openfaas
+functions:
+  openfaas-imagecrawler:
+    lang: python3
+    handler: ./openfaas-imagecrawler
+    image: servernull/openfaas-imagecrawler:0.2.0
+    environment:
+      read_timeout: 120
+      write_timeout: 120
+      exec_timeout: 120
+  openfaas-imagecrawlerdemux:
+    lang: go
+    handler: ./openfaas-imagecrawlerdemux
+    image: servernull/openfaas-imagecrawlerdemux:0.1.0
+    environment:
+      read_timeout: 120
+      write_timeout: 120
+      exec_timeout: 120
+  openfaas-exif:
+    lang: go
+    handler: ./openfaas-exif
+    image: servernull/openfaas-exif:0.1.0
+  openfaas-exiffeed:
+    lang: python3
+    handler: ./openfaas-exiffeed
+    image: servernull/openfaas-exiffeed:0.1.0
+    environment:
+      read_timeout: 660
+      write_timeout: 660
+      exec_timeout: 660
+  openfaas-opennsfw:
+    lang: dockerfile
+    handler: ./openfaas-opennsfw
+    image: servernull/openfaas-opennsfw:0.1.0
+    environment:
+      read_timeout: 120
+      write_timeout: 120
+      exec_timeout: 120
+  openfaas-opennsfwfeed:
+    lang: python3
+    handler: ./openfaas-opennsfwfeed
+    image: servernull/openfaas-opennsfwfeed:latest
+    environment:
+      read_timeout: 660
+      write_timeout: 660
+      exec_timeout: 660
+  inception:
+    lang: dockerfile
+    handler: ./function
+    image: alexellis/inception:2.1
+  openfaas-inceptionfeed:
+    lang: python3
+    handler: ./openfaas-inceptionfeed
+    image: servernull/openfaas-inceptionfeed:0.1.0
+    environment:
+      read_timeout: 660
+      write_timeout: 660
+      exec_timeout: 660
+  openfaas-elastic:
+    lang: python3
+    handler: ./openfaas-elastic
+    image: servernull/openfaas-elastic:0.1.0
+    environment:
+      read_timeout: 500
+      write_timeout: 500
+      exec_timeout: 500
+      elastic_search_ip: 192.168.0.22
+  openfaas-imagesearch:
+    lang: python
+    handler: ./openfaas-imagesearch
+    image: servernull/openfaas-imagesearch:0.1.0
+    environment:
+      elastic_search_ip: 192.168.0.22
+      elastic_max_results: 10000
+  openfaas-imagecrawlerdemux:
+    lang: go
+    handler: ./openfaas-imagecrawlerdemux
+    image: servernull/openfaas-imagecrawlerdemux:0.1.0
+    environment:
+      read_timeout: 120
+      write_timeout: 120
+      exec_timeout: 120
+  openfaas-imageui:
+    lang: golang-http
+    handler: ./openfaas-imageui
+    image: servernull/openfaas-imageui:0.1.0
+    environment:
+      read_timeout: 120
+      write_timeout: 120
+      exec_timeout: 120
